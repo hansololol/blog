@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# 리택트 공부
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 기본 설치 방법 정리
 
-## Available Scripts
+<a href='https://nodejs.org/ko'>노드 js 설치하기</a>
 
-In the project directory, you can run:
+노드 js, 리액트에 대한 글. 여러 번 읽어보면 좋을듯 <br>
+https://velog.io/@stella6767/React%EC%99%80-Node.js%EC%9D%98-%EA%B4%80%EA%B3%84
 
-### `npm start`
+파일을 저장할 새로운 폴더를 생성하고 터미널 열기!
+터미널 열었을 때 스크립트를 제한해서 나타나는 오류 => 윈도우에서 react 스크립트 실행할 수 있도록 설정하면 됨
+windows power shell 관리자 모드로 실행
+Set-ExecutionPolicy RemoteSigned 설정
+이후 다시 실행해보기!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+(create react app 프로젝트명)  - 으로 생성이 일반적<br>
+![image](https://github.com/hansololol/blog/assets/142460146/390d8050-9c5e-4f9c-b4c3-618674d3a2c2)<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+오류 발생. npm을 찾을 수 없어서 프로젝트 생성을 도와주는 npx 또한 실행할 수 없음.
 
-### `npm test`
+npm uninstall –g create-react-app
+create-react-app blog 시작하니까 실행됨 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://github.com/hansololol/blog/assets/142460146/426242a4-8660-49d9-bf58-9f5fdda9a007) <br>
 
-### `npm run build`
+npm 이전 버전이 남아 있어 그렇거나, 환경변수 미설정으로 인하여 npm을 찾을 수 없는 것.
+터미널에서 npm을 제거 후 다시 설치하여 경로를 찾을 수 있었던 것 같다. 
+그러나 최종적으로 환경변수 경로 설정하지 않았기 때문에 하단에서 다시금 오류가 생김
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+시작방법 메뉴 - 터미널 – new 터미널 - npm start 를 입력하면 자동으로 실행
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### npm(node package manager) 라이브러리 모아놓은 플랫폼 – nodejs 설치시 자동으로 설치되나 컴퓨터가 경로를 인식하지 못할 수 있으니 경로 설정해주기
+### npx 명령어 사용 가능, 프로젝트 생성을 쉽게 할 수 있도록 도와줌 
