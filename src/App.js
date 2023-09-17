@@ -10,7 +10,7 @@ function App() {
  let [c,d]=[1,2];
  //let anum = num[0]; 두 가지 자료형 동시 설정 가능
  let [logo, setLogo]=  useState(['남자 코트 추천', '여자 코트 추천', '추천']);
- let[좋아요, setGood] = useState(0); //좋아요 갯수
+ let[좋아요, setGood] = useState(0); //좋아요 갯수ㅎㅎ
 
  function updateGood() {
   setGood(좋아요+1);
