@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import React from "react";
 
 function App() {
   let post = '강남 우동 맛집';
@@ -12,6 +13,7 @@ function App() {
  let [logo, setLogo]=  useState(['남자 코트 추천', '가가', '차차', '하하']);
  let[좋아요, setGood] = useState([0,0,0,0]); //좋아요 갯수
  let [modal, setModal]=useState(['false', '기본값']);
+let [입력값, 입력값변경] = useState('');
 
  function coat(){
   let copy=[...logo];
@@ -40,10 +42,22 @@ function 가나다(){
         copyGood[i]+=1;
         setGood(copyGood);}}>굿</span>{좋아요[i]}</h4>
       <p>2월 16일 발행</p>
+      <button onClick={()=>{  
+        let minLogo=[...logo];
+        minLogo.splice(i,1);
+        setLogo(minLogo);
+         }}>글삭제</button>
       </div>
         )
        })
      }
+      <input onChange={(e)=>{입력값변경(e.target.value); console.log(입력값) }}></input>
+      <button onClick={()=>{  
+        let plusLogo=[...logo];
+        plusLogo[plusLogo.length]=입력값;
+        setLogo(plusLogo);
+         }}>글추가</button>
+         
 {/*      
       <div className='list'>
       <h4>{logo[1]}</h4>
@@ -63,6 +77,7 @@ function 가나다(){
      {
       modal[0] =='true' ?  <Modal re="여자 코트 추천" color={'yellow'} logo ={logo} modal={modal}></Modal> : null
      }
+
     </div>
    
   );
@@ -78,7 +93,30 @@ function Modal(props){
       글 = props.logo[1];
       글수정(글);
     }}>글 수정</button>
+    <Modal2></Modal2>
   </div>
   );
+}
+
+class Modal2 extends React.Component{
+  constructor(){
+    super()
+    this.state={
+      name : 'kim',
+      age : 20
+    }
+  }
+  render(){
+    return(
+      <div>
+          {this.state.age}
+        <button onClick={()=>{
+          this.setState({age:21})
+        }}>버튼
+
+        </button>
+      </div>
+    )
+  }
 }
 export default App;
