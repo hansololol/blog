@@ -5,7 +5,11 @@
 <a href='https://nodejs.org/ko'>노드 js 설치하기</a>
 
 노드 js, 리액트에 대한 글. 여러 번 읽어보면 좋을듯 <br>
-https://velog.io/@stella6767/React%EC%99%80-Node.js%EC%9D%98-%EA%B4%80%EA%B3%84
+https://velog.io/@stella6767/React%EC%99%80-Node.js%EC%9D%98-%EA%B4%80%EA%B3%84 
+<br>
+리액트 한글번역 사이트
+https://react-ko.dev/ 
+
 
 파일을 저장할 새로운 폴더를 생성하고 터미널 열기!
 터미널 열었을 때 스크립트를 제한해서 나타나는 오류 => 윈도우에서 react 스크립트 실행할 수 있도록 설정하면 됨
